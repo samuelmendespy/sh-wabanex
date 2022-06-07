@@ -3,6 +3,7 @@ defmodule Shwabanex.IMC do
     filename
     |> File.read()
     |> handle_file()
+
     # result = File.read(filename)
     # handle_file(result)
   end
@@ -13,6 +14,7 @@ defmodule Shwabanex.IMC do
       |> String.split("\r\n")
       |> Enum.map(fn line -> parse_line(line) end)
       |> Enum.into(%{})
+
     {:ok, data}
   end
 

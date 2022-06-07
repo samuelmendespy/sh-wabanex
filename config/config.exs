@@ -10,9 +10,10 @@ use Mix.Config
 config :shwabanex,
   ecto_repos: [Shwabanex.Repo]
 
-  config :shwabanex, Shwabanex.Repo,
-    migration_primary_key: [type: :binary_id],
-    migration_foreign_key: [type: :binary_id]
+# Configuração para utilização de UUID com o banco de dados
+config :shwabanex, Shwabanex.Repo,
+  migration_primary_key: [type: :binary_id],
+  migration_foreign_key: [type: :binary_id]
 
 # Configures the endpoint
 config :shwabanex, ShwabanexWeb.Endpoint,

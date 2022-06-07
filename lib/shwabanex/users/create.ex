@@ -1,4 +1,4 @@
-defmodule Shwabanex.User.Create do
+defmodule Shwabanex.Users.Create do
   alias Shwabanex.{Repo, User}
 
   def call(params) do

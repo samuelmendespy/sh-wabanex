@@ -1,4 +1,4 @@
-defmodule Shwabanex.User.Get do
+defmodule Shwabanex.Users.Get do
   alias Ecto.UUID
   alias Shwabanex.{Repo, User}
 
@@ -17,7 +17,5 @@ defmodule Shwabanex.User.Get do
       nil -> {:error, "User not found"}
       user -> {:ok, user}
     end
-
   end
-
 end
